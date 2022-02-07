@@ -16,13 +16,9 @@ body {
 }
 
 .header h1 {
-  display: inline;
   font-size: 48px;
   color: #10022c;
   background: #27b3b8;
-  flex: 1 0 200px;
-  padding: 15px;
-  border-style: unset;
 }
 
 .header div {
@@ -48,73 +44,56 @@ a {
 }
 
 p {
+  font-family: "Amatic SC", cursive;
   font-size: 16px;
 }
 
-.txt-in-image {
-  position: absolute;
-  bottom: 20px;
-  right: 10px;
-  display: inline;
-  font-size: 48px;
-  background: #27b3b8;
-  color: #10022c;
-  flex: 1 0 200px;
-  padding: 15px;
-  border-style: unset;
+h3 {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  color: #4194f4;
+  font-size: xx-large;
 }
 
-.hero {
-  height: 300px;
+.container {
   width: 100%;
-  margin-bottom: 25px;
-  background-image: url("../../image/panorama-blue-night-sky-milky-260nw-1025221240.jpg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
 }
 
-.left {
-  padding: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: #567fa0;
-  font-size: 50;
+#main-container {
+  padding-top: 100px;
+  min-height: calc(100vh - 70px);
 }
 
-.About-Me {
-  color: #567fa0;
-  float: right;
-  margin-left: 25px;
-  font-size: 60px;
+.main-section {
+  float: left;
+  width: 100%;
+  max-width: 960px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
-.Work {
+.image {
+  float: left;
+  width: 225px;
+  height: auto;
+  margin-top: 10px;
   margin-right: 25px;
-}
-
-.Contact-Me {
-  color: #567fa0;
-  margin-left: 25px;
-}
-
-.Contact-Me-div {
-  padding-bottom: 15px;
-  float: right;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.Contact-Me-div-ul {
-  list-style-type: none;
-}
-
-.Contact-Me-div-ul-li {
-  display: inline-block;
-  margin-right: 20px;
 }
 
 a {
   color: #567fa0;
   text-decoration: underline;
   font-size: 16px;
+}
+
+@media only screen and (max-width: 690px) {
+  .inner-wrap h2 {
+    font-size: 48.75px;
+    line-height: 61.75px;
+  }
 }
